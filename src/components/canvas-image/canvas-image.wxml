@@ -1,0 +1,12 @@
+  <!-- style="width: 300px; height: 400px; border: 1px solid red;" -->
+
+<view class="xxx-components">
+  <canvas
+  canvas-id="ocanvase"
+  style="width: 300px; height: 400px; border: 1px dotted blue;"
+  binderror="_canvasIdErrorCallback"
+  bind:touchstart="tsHandler"
+  bind:touchend="teHandler"
+  >
+  </canvas>
+</view>

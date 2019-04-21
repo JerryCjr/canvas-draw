@@ -1,0 +1,11 @@
+<view class="f-canvas">
+  <canvas
+    canvas-id="ocanvas"
+    style="width: 300px; height: 400px; border: 1px dotted blue;"
+    binderror="_canvasIdErrorCallback"
+    bind:touchstart="tsHandler"
+    bind:touchmove="tmHandler"
+    bind:touchend="teHandler"
+    >
+  </canvas>
+</view>
