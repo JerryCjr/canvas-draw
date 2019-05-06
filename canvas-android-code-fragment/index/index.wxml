@@ -1,0 +1,12 @@
+<view class="f-canvas">
+  <canvas
+    canvas-id="ocanvas"
+    style="width: 90vw; height: 80vh;"
+    binderror="_canvasIdErrorCallback"
+    >
+  </canvas>
+
+  <view class="func">
+    <button bindtap="store">store</button>
+  </view>
+</view>
