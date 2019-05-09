@@ -7,14 +7,20 @@
       class='cus-view'
       x='{{x}}'
       y='{{y}}'
+      inertia="true"
+      animation="true"
       direction="all"
+      damping='200'
+      friction="2000"
       scale
-      damping="100"
       bindscale="scaleHandler"
-      bindchange="changeHandler"
-
     >
+      <image
+        style="background-color: #eeeeee;"
+        src="http://i.s.babyfs.cn/f7cab38f423b4f3bb8ef5b1eb1b46d42.jpg"
+      ></image>
     </movable-view>
+
     <movable-view
       class='back-view'
       bind:touchstart="ts"

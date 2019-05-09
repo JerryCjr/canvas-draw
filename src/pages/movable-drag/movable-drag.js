@@ -14,7 +14,8 @@ Page({
     movableBase: null, // moveView x y
     backView: null, // 底部视图左边信息 此处业务: 为系统默认海报图
     cusView: null, // custom view
-    doubleTouchesTimeStamp: 0
+    doubleTouchesTimeStamp: 0,
+    lastStamp: 0
   },
 
   /**
@@ -46,6 +47,7 @@ Page({
   ts(e) {
     // console.log(e);
     const touches = e.touches;
+    this.customData.lastStamp = e.timeStamp;
     if (touches.length && touches.length === 1) {
       const cur = touches[0];
       this.customData.touchBase = {
@@ -63,6 +65,11 @@ Page({
   tm(e) {
     // console.log(e);
     if (!e.touches || !e.touches.length) return false;
+
+    if (e.timeStamp - this.customData.lastStamp <= 100) {
+      return;
+    };
+    this.customData.lastStamp = e.timeStamp;
     const touches = e.touches;
 
     // 多指
@@ -75,8 +82,8 @@ Page({
         return false;
       }
       const cur = touches[0];
-      const durationX = cur.clientX - this.customData.touchBase.x;
-      const durationY = cur.clientY - this.customData.touchBase.y;
+      const durationX = parseInt(cur.clientX - this.customData.touchBase.x);
+      const durationY = parseInt(cur.clientY - this.customData.touchBase.y);
 
       let computedX = this.customData.movableBase.x + durationX;
       let computedY = this.customData.movableBase.y + durationY;
@@ -99,8 +106,8 @@ Page({
       }
 
       this.setData({
-        x: computedX,
-        y: computedY
+        x: parseInt(computedX),
+        y: parseInt(computedY)
       });
 
       console.log('duration: ', durationX, durationY);
