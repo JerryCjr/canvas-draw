@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/canvas-android/canvas-android"
+    "pages/canvas-android/canvas-android",
+    "pages/movable-drag/movable-drag"
   ],
   "window": {
     "backgroundTextStyle": "light",

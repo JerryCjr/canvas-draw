@@ -1,0 +1,27 @@
+<view class='container'>
+  <movable-area
+    class='m-area'
+    scale-area='true'
+  >
+    <movable-view
+      class='cus-view'
+      x='{{x}}'
+      y='{{y}}'
+      direction="all"
+      scale
+      damping="100"
+      bindscale="scaleHandler"
+      bindchange="changeHandler"
+
+    >
+    </movable-view>
+    <movable-view
+      class='back-view'
+      bind:touchstart="ts"
+      bind:touchmove="tm"
+      bind:touchend="te"
+    >
+    </movable-view>
+  </movable-area>
+
+</view>
