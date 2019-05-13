@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/canvas-android/canvas-android",
-    "pages/movable-drag/movable-drag"
+    "pages/movable-drag/movable-drag",
+    "pages/cax-practice/cax-practice"
   ],
   "window": {
     "backgroundTextStyle": "light",

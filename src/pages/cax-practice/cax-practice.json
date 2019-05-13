@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "_template",
+  "usingComponents": {
+    "cax":"../../components/cax/cax"
+  }
+}

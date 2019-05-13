@@ -1293,6 +1293,33 @@
         "babyfs-wxapp-runningtime": "^1.1.1"
       }
     },
+    "babyfs-wxapp-checkversion": {
+      "version": "2.0.0",
+      "resolved": "http://npm.babyfs.cn/babyfs-wxapp-checkversion/-/babyfs-wxapp-checkversion-2.0.0.tgz",
+      "integrity": "sha512-SJR7QTUdepzxTQ9Kg57WCjECa1AOYTSH7ztSl7E60GT+w1lGTCtnNF8dNQCDPi/FJ8lDdaRLgjSYohoxWRmY8w==",
+      "requires": {
+        "babyfs-wxapp-runningtime": "^1.1.1"
+      }
+    },
+    "babyfs-wxapp-img-compound": {
+      "version": "0.1.4",
+      "resolved": "http://npm.babyfs.cn/babyfs-wxapp-img-compound/-/babyfs-wxapp-img-compound-0.1.4.tgz",
+      "integrity": "sha512-vc9PajsU1WC98Tvtq0a52+F3DEiHlwh3UN2biARBGzAOu/KtbeuoCSgCfaHY4uWJIAVYR2hCPv7B5so3FDVMIA==",
+      "requires": {
+        "babyfs-wxapp-api": "^2.0.0",
+        "babyfs-wxapp-checkversion": "^2.0.0",
+        "babyfs-wxapp-qrcode": "^0.1.0",
+        "babyfs-wxapp-runningtime": "^1.1.1"
+      }
+    },
+    "babyfs-wxapp-qrcode": {
+      "version": "0.1.0",
+      "resolved": "http://npm.babyfs.cn/babyfs-wxapp-qrcode/-/babyfs-wxapp-qrcode-0.1.0.tgz",
+      "integrity": "sha512-COWzD2gmavKDnXiZi0g9z4oM0uJ9KAhRBRfhQjoAozKRxR0hN5d8CGLwAK5YACWL55BdrE7cRBLz37pdw1BkIQ==",
+      "requires": {
+        "babyfs-wxapp-runningtime": "^1.1.1"
+      }
+    },
     "babyfs-wxapp-runningtime": {
       "version": "1.1.1",
       "resolved": "http://npm.babyfs.cn/babyfs-wxapp-runningtime/-/babyfs-wxapp-runningtime-1.1.1.tgz",

@@ -40,7 +40,7 @@
       "list": []
     },
     "miniprogram": {
-      "current": 1,
+      "current": 2,
       "list": [
         {
           "id": -1,
@@ -53,6 +53,13 @@
           "id": -1,
           "name": "drag",
           "pathName": "pages/movable-drag/movable-drag",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "cax",
+          "pathName": "pages/cax-practice/cax-practice",
           "scene": null
         }
       ]

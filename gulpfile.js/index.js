@@ -10,7 +10,7 @@ const {
 } = require('gulp');
 const less = require('gulp-less');
 const rename = require('gulp-rename');
-const eslint = require('gulp-eslint');
+// const eslint = require('gulp-eslint');
 const px2rpx = require('gulp-px2rpx');
 const filter = require('gulp-filter');
 
@@ -63,11 +63,11 @@ const js = async () => {
     .pipe(dependency())
     .pipe(replaceModulePath())
     .pipe(replaceImgSrc(imageMap))
-    .pipe(eslint({
-      fix: true
-    }))
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError())
+    // .pipe(eslint({
+    //   fix: true
+    // }))
+    // .pipe(eslint.format())
+    // .pipe(eslint.failAfterError())
     .pipe(dest(distPath));
 };
 // audio
